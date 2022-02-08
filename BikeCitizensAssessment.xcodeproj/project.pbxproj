@@ -7,25 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4233CF9927B1EA9C00CB7994 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233CF9827B1EA9C00CB7994 /* Notification+Extensions.swift */; };
 		429CE28427AAD78800B3D5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE28327AAD78800B3D5F9 /* AppDelegate.swift */; };
 		429CE28627AAD78800B3D5F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE28527AAD78800B3D5F9 /* SceneDelegate.swift */; };
-		429CE28827AAD78800B3D5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE28727AAD78800B3D5F9 /* ViewController.swift */; };
+		429CE28827AAD78800B3D5F9 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE28727AAD78800B3D5F9 /* SearchAddressViewController.swift */; };
 		429CE28B27AAD78800B3D5F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429CE28927AAD78800B3D5F9 /* Main.storyboard */; };
 		429CE28E27AAD78800B3D5F9 /* BikeCitizensAssessment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 429CE28C27AAD78800B3D5F9 /* BikeCitizensAssessment.xcdatamodeld */; };
 		429CE29027AAD78A00B3D5F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 429CE28F27AAD78A00B3D5F9 /* Assets.xcassets */; };
 		429CE29327AAD78A00B3D5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 429CE29127AAD78A00B3D5F9 /* LaunchScreen.storyboard */; };
+		429CE2A127AB82BF00B3D5F9 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2A027AB82BF00B3D5F9 /* APIEndpoint.swift */; };
+		429CE2A327AB82D600B3D5F9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2A227AB82D600B3D5F9 /* API.swift */; };
+		429CE2A527AB837600B3D5F9 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2A427AB837600B3D5F9 /* NetworkLayer.swift */; };
+		429CE2A827AB84B100B3D5F9 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2A727AB84B100B3D5F9 /* Bundle+Extensions.swift */; };
+		429CE2AC27AB84FB00B3D5F9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2AB27AB84FB00B3D5F9 /* UIViewController+Extensions.swift */; };
+		429CE2AF27AB85AC00B3D5F9 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2AE27AB85AC00B3D5F9 /* NetworkConnection.swift */; };
+		429CE2B227AB863000B3D5F9 /* AddressesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2B127AB863000B3D5F9 /* AddressesData.swift */; };
+		429CE2D827AB9BAC00B3D5F9 /* FavoriteAddressesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2D727AB9BAC00B3D5F9 /* FavoriteAddressesViewController.swift */; };
+		429CE2DC27AB9FC800B3D5F9 /* AddressDetailsCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2DA27AB9FC800B3D5F9 /* AddressDetailsCellController.swift */; };
+		429CE2DD27AB9FC800B3D5F9 /* AddressDetailsCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429CE2DB27AB9FC800B3D5F9 /* AddressDetailsCellController.xib */; };
+		429CE2E527ACC81400B3D5F9 /* AddressListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2E427ACC81400B3D5F9 /* AddressListDataSource.swift */; };
+		429CE2E827ACCA0100B3D5F9 /* EmptySearchBarCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2E627ACCA0100B3D5F9 /* EmptySearchBarCellController.swift */; };
+		429CE2E927ACCA0100B3D5F9 /* EmptySearchBarCellController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429CE2E727ACCA0100B3D5F9 /* EmptySearchBarCellController.xib */; };
+		429CE2EB27ACCF7800B3D5F9 /* SearchAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2EA27ACCF7800B3D5F9 /* SearchAddressViewModel.swift */; };
+		429CE2F527AED0DE00B3D5F9 /* PopUpAddressDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2F327AED0DE00B3D5F9 /* PopUpAddressDetailsController.swift */; };
+		429CE2F627AED0DE00B3D5F9 /* PopUpAddressDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = 429CE2F427AED0DE00B3D5F9 /* PopUpAddressDetails.xib */; };
+		429CE2FB27AF3F2E00B3D5F9 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2FA27AF3F2E00B3D5F9 /* CoreDataManager.swift */; };
+		429CE2FD27AF7AA900B3D5F9 /* FavouriteAddressesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE2FC27AF7AA900B3D5F9 /* FavouriteAddressesViewModel.swift */; };
+		429CE30227B02D3A00B3D5F9 /* AddressDetailsCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE30127B02D3A00B3D5F9 /* AddressDetailsCellViewModel.swift */; };
+		429CE30727B041C500B3D5F9 /* PopUpAddressDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE30627B041C500B3D5F9 /* PopUpAddressDetailsViewModel.swift */; };
+		429CE30C27B0450F00B3D5F9 /* Favoritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE30B27B0450F00B3D5F9 /* Favoritable.swift */; };
+		429CE30E27B04D2400B3D5F9 /* AdressListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429CE30D27B04D2400B3D5F9 /* AdressListDelegate.swift */; };
+		F9997C08E85F0254AC4F1587 /* Pods_BikeCitizensAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7495162160616F5FE8E26D3B /* Pods_BikeCitizensAssessment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		309C618FF85D384D6C948432 /* Pods-BikeCitizensAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeCitizensAssessment.release.xcconfig"; path = "Target Support Files/Pods-BikeCitizensAssessment/Pods-BikeCitizensAssessment.release.xcconfig"; sourceTree = "<group>"; };
+		4233CF9827B1EA9C00CB7994 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
 		429CE28027AAD78800B3D5F9 /* BikeCitizensAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeCitizensAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		429CE28327AAD78800B3D5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		429CE28527AAD78800B3D5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		429CE28727AAD78800B3D5F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		429CE28727AAD78800B3D5F9 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
 		429CE28A27AAD78800B3D5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		429CE28D27AAD78800B3D5F9 /* BikeCitizensAssessment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BikeCitizensAssessment.xcdatamodel; sourceTree = "<group>"; };
 		429CE28F27AAD78A00B3D5F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		429CE29227AAD78A00B3D5F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		429CE29427AAD78A00B3D5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		429CE2A027AB82BF00B3D5F9 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		429CE2A227AB82D600B3D5F9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		429CE2A427AB837600B3D5F9 /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		429CE2A727AB84B100B3D5F9 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		429CE2AB27AB84FB00B3D5F9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		429CE2AE27AB85AC00B3D5F9 /* NetworkConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		429CE2B127AB863000B3D5F9 /* AddressesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesData.swift; sourceTree = "<group>"; };
+		429CE2D727AB9BAC00B3D5F9 /* FavoriteAddressesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteAddressesViewController.swift; sourceTree = "<group>"; };
+		429CE2DA27AB9FC800B3D5F9 /* AddressDetailsCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsCellController.swift; sourceTree = "<group>"; };
+		429CE2DB27AB9FC800B3D5F9 /* AddressDetailsCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressDetailsCellController.xib; sourceTree = "<group>"; };
+		429CE2DF27ABA67600B3D5F9 /* PodsBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsBridge.h; sourceTree = "<group>"; };
+		429CE2E427ACC81400B3D5F9 /* AddressListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListDataSource.swift; sourceTree = "<group>"; };
+		429CE2E627ACCA0100B3D5F9 /* EmptySearchBarCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySearchBarCellController.swift; sourceTree = "<group>"; };
+		429CE2E727ACCA0100B3D5F9 /* EmptySearchBarCellController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptySearchBarCellController.xib; sourceTree = "<group>"; };
+		429CE2EA27ACCF7800B3D5F9 /* SearchAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewModel.swift; sourceTree = "<group>"; };
+		429CE2F327AED0DE00B3D5F9 /* PopUpAddressDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAddressDetailsController.swift; sourceTree = "<group>"; };
+		429CE2F427AED0DE00B3D5F9 /* PopUpAddressDetails.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopUpAddressDetails.xib; sourceTree = "<group>"; };
+		429CE2FA27AF3F2E00B3D5F9 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		429CE2FC27AF7AA900B3D5F9 /* FavouriteAddressesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteAddressesViewModel.swift; sourceTree = "<group>"; };
+		429CE30127B02D3A00B3D5F9 /* AddressDetailsCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsCellViewModel.swift; sourceTree = "<group>"; };
+		429CE30627B041C500B3D5F9 /* PopUpAddressDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAddressDetailsViewModel.swift; sourceTree = "<group>"; };
+		429CE30B27B0450F00B3D5F9 /* Favoritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritable.swift; sourceTree = "<group>"; };
+		429CE30D27B04D2400B3D5F9 /* AdressListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdressListDelegate.swift; sourceTree = "<group>"; };
+		7495162160616F5FE8E26D3B /* Pods_BikeCitizensAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BikeCitizensAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C6F54CE3590694AC49DB9A /* Pods-BikeCitizensAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BikeCitizensAssessment.debug.xcconfig"; path = "Target Support Files/Pods-BikeCitizensAssessment/Pods-BikeCitizensAssessment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +84,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9997C08E85F0254AC4F1587 /* Pods_BikeCitizensAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ED0C17BFC8BEB9CD1C9378E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88C6F54CE3590694AC49DB9A /* Pods-BikeCitizensAssessment.debug.xcconfig */,
+				309C618FF85D384D6C948432 /* Pods-BikeCitizensAssessment.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4233CF9A27B1FDF900CB7994 /* TableViewAssets */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2E427ACC81400B3D5F9 /* AddressListDataSource.swift */,
+				429CE30D27B04D2400B3D5F9 /* AdressListDelegate.swift */,
+			);
+			path = TableViewAssets;
+			sourceTree = "<group>";
+		};
 		429CE27727AAD78800B3D5F9 = {
 			isa = PBXGroup;
 			children = (
 				429CE28227AAD78800B3D5F9 /* BikeCitizensAssessment */,
 				429CE28127AAD78800B3D5F9 /* Products */,
+				2ED0C17BFC8BEB9CD1C9378E /* Pods */,
+				5F71813A66163AA7F2FE15DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +130,199 @@
 		429CE28227AAD78800B3D5F9 /* BikeCitizensAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				429CE28327AAD78800B3D5F9 /* AppDelegate.swift */,
-				429CE28527AAD78800B3D5F9 /* SceneDelegate.swift */,
-				429CE28727AAD78800B3D5F9 /* ViewController.swift */,
-				429CE28927AAD78800B3D5F9 /* Main.storyboard */,
-				429CE28F27AAD78A00B3D5F9 /* Assets.xcassets */,
-				429CE29127AAD78A00B3D5F9 /* LaunchScreen.storyboard */,
+				429CE29A27AAD7A700B3D5F9 /* Applications */,
+				429CE2AD27AB859000B3D5F9 /* Service */,
+				429CE2A627AB849700B3D5F9 /* Extension */,
+				429CE29F27AB826B00B3D5F9 /* Network */,
+				429CE2B027AB85CD00B3D5F9 /* Model */,
+				429CE29B27AAD7BE00B3D5F9 /* View */,
+				429CE2D627AB9B0200B3D5F9 /* ViewModel */,
+				429CE2DE27ABA63100B3D5F9 /* Resources */,
 				429CE29427AAD78A00B3D5F9 /* Info.plist */,
 				429CE28C27AAD78800B3D5F9 /* BikeCitizensAssessment.xcdatamodeld */,
 			);
 			path = BikeCitizensAssessment;
+			sourceTree = "<group>";
+		};
+		429CE29A27AAD7A700B3D5F9 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				429CE28327AAD78800B3D5F9 /* AppDelegate.swift */,
+				429CE28527AAD78800B3D5F9 /* SceneDelegate.swift */,
+			);
+			path = Applications;
+			sourceTree = "<group>";
+		};
+		429CE29B27AAD7BE00B3D5F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2D927AB9EE000B3D5F9 /* Cells */,
+				429CE29D27AAD7E500B3D5F9 /* StoryBoard */,
+				429CE29C27AAD7D000B3D5F9 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		429CE29C27AAD7D000B3D5F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4233CF9A27B1FDF900CB7994 /* TableViewAssets */,
+				429CE30427B0417300B3D5F9 /* List */,
+				429CE30327B0411F00B3D5F9 /* popupView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		429CE29D27AAD7E500B3D5F9 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				429CE28927AAD78800B3D5F9 /* Main.storyboard */,
+				429CE29127AAD78A00B3D5F9 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		429CE29F27AB826B00B3D5F9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2A027AB82BF00B3D5F9 /* APIEndpoint.swift */,
+				429CE2A227AB82D600B3D5F9 /* API.swift */,
+				429CE2A427AB837600B3D5F9 /* NetworkLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		429CE2A627AB849700B3D5F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2A727AB84B100B3D5F9 /* Bundle+Extensions.swift */,
+				429CE2AB27AB84FB00B3D5F9 /* UIViewController+Extensions.swift */,
+				4233CF9827B1EA9C00CB7994 /* Notification+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		429CE2AD27AB859000B3D5F9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2AE27AB85AC00B3D5F9 /* NetworkConnection.swift */,
+				429CE2FA27AF3F2E00B3D5F9 /* CoreDataManager.swift */,
+				429CE30B27B0450F00B3D5F9 /* Favoritable.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		429CE2B027AB85CD00B3D5F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2B127AB863000B3D5F9 /* AddressesData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		429CE2D627AB9B0200B3D5F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				429CE30A27B044A400B3D5F9 /* ViewControllerViewModel */,
+				429CE30027B02CF100B3D5F9 /* CellsViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		429CE2D927AB9EE000B3D5F9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2FF27B02CDC00B3D5F9 /* CellViews */,
+				429CE2FE27B02CB700B3D5F9 /* CellsController */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		429CE2DE27ABA63100B3D5F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				429CE28F27AAD78A00B3D5F9 /* Assets.xcassets */,
+				429CE2DF27ABA67600B3D5F9 /* PodsBridge.h */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		429CE2FE27B02CB700B3D5F9 /* CellsController */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2DA27AB9FC800B3D5F9 /* AddressDetailsCellController.swift */,
+				429CE2E627ACCA0100B3D5F9 /* EmptySearchBarCellController.swift */,
+			);
+			path = CellsController;
+			sourceTree = "<group>";
+		};
+		429CE2FF27B02CDC00B3D5F9 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2DB27AB9FC800B3D5F9 /* AddressDetailsCellController.xib */,
+				429CE2E727ACCA0100B3D5F9 /* EmptySearchBarCellController.xib */,
+			);
+			path = CellViews;
+			sourceTree = "<group>";
+		};
+		429CE30027B02CF100B3D5F9 /* CellsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				429CE30127B02D3A00B3D5F9 /* AddressDetailsCellViewModel.swift */,
+			);
+			path = CellsViewModel;
+			sourceTree = "<group>";
+		};
+		429CE30327B0411F00B3D5F9 /* popupView */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2F427AED0DE00B3D5F9 /* PopUpAddressDetails.xib */,
+				429CE2F327AED0DE00B3D5F9 /* PopUpAddressDetailsController.swift */,
+			);
+			path = popupView;
+			sourceTree = "<group>";
+		};
+		429CE30427B0417300B3D5F9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				429CE28727AAD78800B3D5F9 /* SearchAddressViewController.swift */,
+				429CE2D727AB9BAC00B3D5F9 /* FavoriteAddressesViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		429CE30827B0438100B3D5F9 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				429CE2EA27ACCF7800B3D5F9 /* SearchAddressViewModel.swift */,
+				429CE2FC27AF7AA900B3D5F9 /* FavouriteAddressesViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		429CE30927B043AD00B3D5F9 /* popup */ = {
+			isa = PBXGroup;
+			children = (
+				429CE30627B041C500B3D5F9 /* PopUpAddressDetailsViewModel.swift */,
+			);
+			path = popup;
+			sourceTree = "<group>";
+		};
+		429CE30A27B044A400B3D5F9 /* ViewControllerViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				429CE30827B0438100B3D5F9 /* List */,
+				429CE30927B043AD00B3D5F9 /* popup */,
+			);
+			path = ViewControllerViewModel;
+			sourceTree = "<group>";
+		};
+		5F71813A66163AA7F2FE15DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7495162160616F5FE8E26D3B /* Pods_BikeCitizensAssessment.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +332,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 429CE29727AAD78A00B3D5F9 /* Build configuration list for PBXNativeTarget "BikeCitizensAssessment" */;
 			buildPhases = (
+				0D7BC67A398D282864F81269 /* [CP] Check Pods Manifest.lock */,
 				429CE27C27AAD78800B3D5F9 /* Sources */,
 				429CE27D27AAD78800B3D5F9 /* Frameworks */,
 				429CE27E27AAD78800B3D5F9 /* Resources */,
+				5D2D9F98BAC7119914703AF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,21 +387,86 @@
 			files = (
 				429CE29327AAD78A00B3D5F9 /* LaunchScreen.storyboard in Resources */,
 				429CE29027AAD78A00B3D5F9 /* Assets.xcassets in Resources */,
+				429CE2DD27AB9FC800B3D5F9 /* AddressDetailsCellController.xib in Resources */,
 				429CE28B27AAD78800B3D5F9 /* Main.storyboard in Resources */,
+				429CE2F627AED0DE00B3D5F9 /* PopUpAddressDetails.xib in Resources */,
+				429CE2E927ACCA0100B3D5F9 /* EmptySearchBarCellController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D7BC67A398D282864F81269 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BikeCitizensAssessment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D2D9F98BAC7119914703AF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeCitizensAssessment/Pods-BikeCitizensAssessment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BikeCitizensAssessment/Pods-BikeCitizensAssessment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BikeCitizensAssessment/Pods-BikeCitizensAssessment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		429CE27C27AAD78800B3D5F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				429CE28827AAD78800B3D5F9 /* ViewController.swift in Sources */,
+				429CE2B227AB863000B3D5F9 /* AddressesData.swift in Sources */,
+				4233CF9927B1EA9C00CB7994 /* Notification+Extensions.swift in Sources */,
+				429CE30227B02D3A00B3D5F9 /* AddressDetailsCellViewModel.swift in Sources */,
+				429CE2A527AB837600B3D5F9 /* NetworkLayer.swift in Sources */,
+				429CE28827AAD78800B3D5F9 /* SearchAddressViewController.swift in Sources */,
+				429CE2FB27AF3F2E00B3D5F9 /* CoreDataManager.swift in Sources */,
+				429CE2D827AB9BAC00B3D5F9 /* FavoriteAddressesViewController.swift in Sources */,
+				429CE30C27B0450F00B3D5F9 /* Favoritable.swift in Sources */,
+				429CE2FD27AF7AA900B3D5F9 /* FavouriteAddressesViewModel.swift in Sources */,
+				429CE2AC27AB84FB00B3D5F9 /* UIViewController+Extensions.swift in Sources */,
 				429CE28E27AAD78800B3D5F9 /* BikeCitizensAssessment.xcdatamodeld in Sources */,
+				429CE2F527AED0DE00B3D5F9 /* PopUpAddressDetailsController.swift in Sources */,
 				429CE28427AAD78800B3D5F9 /* AppDelegate.swift in Sources */,
+				429CE2DC27AB9FC800B3D5F9 /* AddressDetailsCellController.swift in Sources */,
 				429CE28627AAD78800B3D5F9 /* SceneDelegate.swift in Sources */,
+				429CE2A327AB82D600B3D5F9 /* API.swift in Sources */,
+				429CE2E527ACC81400B3D5F9 /* AddressListDataSource.swift in Sources */,
+				429CE2A127AB82BF00B3D5F9 /* APIEndpoint.swift in Sources */,
+				429CE2E827ACCA0100B3D5F9 /* EmptySearchBarCellController.swift in Sources */,
+				429CE2EB27ACCF7800B3D5F9 /* SearchAddressViewModel.swift in Sources */,
+				429CE30E27B04D2400B3D5F9 /* AdressListDelegate.swift in Sources */,
+				429CE30727B041C500B3D5F9 /* PopUpAddressDetailsViewModel.swift in Sources */,
+				429CE2AF27AB85AC00B3D5F9 /* NetworkConnection.swift in Sources */,
+				429CE2A827AB84B100B3D5F9 /* Bundle+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +610,7 @@
 		};
 		429CE29827AAD78A00B3D5F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88C6F54CE3590694AC49DB9A /* Pods-BikeCitizensAssessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +623,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moaaz.BikeCitizensAssessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BikeCitizensAssessment/Resources/PodsBridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +640,7 @@
 		};
 		429CE29927AAD78A00B3D5F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 309C618FF85D384D6C948432 /* Pods-BikeCitizensAssessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +653,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +662,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Moaaz.BikeCitizensAssessment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = BikeCitizensAssessment/Resources/PodsBridge.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

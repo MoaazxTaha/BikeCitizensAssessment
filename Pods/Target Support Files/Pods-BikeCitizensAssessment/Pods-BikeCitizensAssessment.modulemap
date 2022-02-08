@@ -1,0 +1,6 @@
+framework module Pods_BikeCitizensAssessment {
+  umbrella header "Pods-BikeCitizensAssessment-umbrella.h"
+
+  export *
+  module * { export * }
+}
