@@ -22,7 +22,6 @@ class AdressListDelegate:NSObject,UITableViewDelegate {
         super.init()
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard !listIsEmpty else {return}
         let vm = PopUpAddressDetailsViewModel(addressesList[indexPath.row])

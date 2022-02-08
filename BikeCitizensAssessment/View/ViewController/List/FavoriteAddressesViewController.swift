@@ -36,7 +36,6 @@ class FavoriteAddressesViewController: UIViewController {
         favoriteList.register(UINib(nibName: String(describing: EmptySearchBarCellController.self) , bundle: nil), forCellReuseIdentifier:EmptySearchBarCellController.cellIdentifier)
         favoriteList.dataSource = viewModel.dataSource
         favoriteList.delegate = delegate
-        
         //RefreshControl setup
         favoriteList.refreshControl = UIRefreshControl()
         favoriteList.refreshControl?.addTarget(self, action: #selector(loadFavouriteList), for: .valueChanged)

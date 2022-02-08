@@ -27,7 +27,6 @@ class SearchAddressViewController: UIViewController{
         // Presentation style
         modalTransitionStyle = .crossDissolve
         modalPresentationStyle = .formSheet
-        
         setupTableView()
         bindTableView()
         configureNavigationBar()
@@ -45,11 +44,10 @@ class SearchAddressViewController: UIViewController{
     private func setupTableView() {
         searchAddressList.register(UINib(nibName: String(describing: AddressDetailsCellController.self) , bundle: nil), forCellReuseIdentifier:AddressDetailsCellController.cellIdentifier)
         searchAddressList.register(UINib(nibName: String(describing: EmptySearchBarCellController.self) , bundle: nil), forCellReuseIdentifier:EmptySearchBarCellController.cellIdentifier)
-        searchAddressList.tableHeaderView?.frame.size.height = 80
-        searchAddressList.backgroundColor = .white
         searchAddressList.dataSource = viewModel.dataSource
         searchAddressList.delegate = delegate
-        
+        searchAddressList.keyboardDismissMode = .onDrag
+
         //RefreshControl setup
         searchAddressList.refreshControl = UIRefreshControl()
         searchAddressList.refreshControl?.addTarget(self, action: #selector(loadAddresses), for: .valueChanged)

@@ -55,7 +55,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yr3-U9-OCM">
-                    <rect key="frame" x="44" y="246" width="326" height="616"/>
+                    <rect key="frame" x="44" y="246" width="326" height="606"/>
                 </mapView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -75,7 +75,7 @@
                 <constraint firstItem="EPC-xr-IJV" firstAttribute="top" secondItem="8zB-HQ-V3e" secondAttribute="bottom" constant="2" id="sm1-zi-D7G"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kKt-E9-jSN" secondAttribute="trailing" constant="30" id="vQj-7C-HFg"/>
                 <constraint firstItem="8zB-HQ-V3e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="28" id="x3D-Me-dmw"/>
-                <constraint firstItem="yr3-U9-OCM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yyw-7a-cwM"/>
+                <constraint firstItem="yr3-U9-OCM" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-10" id="yyw-7a-cwM"/>
                 <constraint firstItem="yr3-U9-OCM" firstAttribute="top" secondItem="EPC-xr-IJV" secondAttribute="bottom" constant="4" id="zCc-7F-AYa"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>
